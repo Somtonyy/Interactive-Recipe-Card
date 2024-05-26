@@ -1,0 +1,84 @@
+body {
+    background-image: url("https://img.freepik.com/free-photo/delicious-food-white-plate_144627-34705.jpg?w=900&t=st=1716427889~exp=1716428489~hmac=e7e2abf60ea0618bb380616c4589046e1ec8ac8b8751b933e955ca83327df4ac");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #41382f;
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+    border: 0.4em solid rgb(115, 166, 115);
+    border-radius: 2%;
+    padding: 1em;
+    background-color: rgb(220, 214, 211);
+}
+
+h1,
+h2,
+cite,
+p {
+    text-align: center;
+    display: block;
+    margin: 1em;
+}
+
+.steps {
+    transform: translate(0, -0.5em);
+}
+
+.button-note {
+    margin: auto;
+    width: 22%;
+}
+
+button {
+    background-color: #ffb061;
+    padding: 0.7em;
+    border-radius: 1em;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #ffa142;
+    transition: 0.3s;
+}
+
+ul li::marker {
+    list-style: circle;
+    color: #ffa142;
+}
+
+.small-ingredients {
+    margin: 4%;
+}
+
+ol {
+    list-style: none;
+    counter-reset: num;
+}
+
+ol li {
+    counter-increment: num;
+}
+
+.non-hidden::before {
+    content: counter(num) ". ";
+    color: rgb(115, 166, 115);
+    font-size: 2em;
+}
+
+.intro {
+    padding: 0%;
+    margin-top: 0%;
+    font-size: 0.9em;
+    transform: translate(0, 1.1em);
+    font-style: italic;
+}
+
+.head {
+    margin-bottom: 0.3em;
+}
